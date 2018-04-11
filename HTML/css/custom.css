@@ -1,0 +1,97 @@
+body{
+    font-family: Ubuntu
+}
+
+header#creative{
+    background-color: transparent;
+}
+
+nav#light ul li a {
+    color: #000 !important;
+}
+
+
+nav.headroom--not-top#dark.transparent {
+    background: #fff;
+}
+
+.dark1 h1, .dark2 h1, .dark3 h1, .dark h1, .primary h1, .masonry .project-info h1{
+    color: #1d6892
+}
+
+.dark1 h6, .dark2 h6, .dark3 h6, .dark h6, .primary h6, .masonry .project-info h6{
+    color: #4d4d4d
+}
+
+nav .n_{
+    height: 160px;
+}
+
+nav#light.start-light.headroom--top #menu-icon span::after {
+    background-color: #08598c;
+    height: 3px;
+}
+
+
+nav#light.start-light.headroom--top #menu-icon span::before {
+    background-color: #08598c;
+    height: 3px;
+}
+
+nav#light.start-light.headroom--top #menu-icon span {
+    background-color: #08598c;
+    height: 3px;
+}
+
+nav .logo-holder .logo {
+    width: 200px; 
+}
+
+@media (max-width: 991px){
+    nav .n_{
+        height: 77px;
+    } 
+
+    body.menu-open nav .nav-content, body.menu-open nav#light .nav-content{
+        background: rgba(255, 255, 255, 0.95);
+        text-align: center; 
+    }
+    nav#light.start-light.headroom--top .nav-content > ul > li > a{
+        line-height: 40px;
+        border-bottom: 1px solid #f1f1f1;
+    }
+}
+
+@media (min-width: 991px){ 
+    nav .n_ {
+        margin-right: 20px;
+        margin-left: auto;
+    }  
+}
+
+header#creative .slide{
+    padding: 10em 5em;
+}
+
+
+a{ 
+    color: #1d6892;
+}
+
+.text-almost-white{
+    color: #f1f1f1 !important;
+}
+
+
+nav li a {
+    font: 400 16px/21px "Ubuntu", sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: none; 
+}
+
+
+
+
+
+
+

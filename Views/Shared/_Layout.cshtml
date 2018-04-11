@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html lang="en-US">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Arisn</title>
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Arisn - Multi Purpose HTML5 Template">
+    <meta name="author" content="premonday.com">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Poppins:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="~/vendor/reset.css">
+    <link rel="stylesheet" href="~/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="~/vendor/ion-icons/ionicons.min.css">
+    <link rel="stylesheet" href="~/vendor/owl-slider/owl.carousel.css">
+    <link rel="stylesheet" href="~/vendor/slideshow/slideshow.css">
+    <link rel="stylesheet" href="~/vendor/lightbox/lity.min.css">
+    <!-- Theme CSS -->
+    <link id="theme" rel="stylesheet" href="~/css/theme6.css">
+    <link id="theme" rel="stylesheet" href="~/css/custom.css">
+    <script src="~/vendor/modernizr.js"></script>
+</head>
+
+<body>
+    <!-- Scroll up -->
+    <div class="scrollup">
+        <i class="ion-ios-arrow-up"></i>
+    </div>
+    <!-- Main Container -->
+    <div class="web-in">
+        <!-- Navigation -->
+        <nav id="light" class="transparent start-light regular">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="nav-ui n_">
+                            <div>
+                                <a href="@Url.Action("Index", "Login")" class="btn hidden-xs">
+                                    <span>Área do cliente</span>
+                                </a>
+                                <div id="menu-icon">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo-holder n_">
+                            <div>
+                                <a href="@Url.Action("Index", "Home")">
+                                    <img class="logo" src="~/img/InfomercFinal.png" alt="">
+                                    <img class="logo alt" src="~/img/InfomercFinal.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav-content n_">
+                            <ul>
+                                <li>
+                                    <a href="@Url.Action("Index","Home")">Home</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","Produtos")">Produtos</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","Blog")">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","Sobre")">Sobre</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","Contato")">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        @RenderBody()
+        <footer id="minimal" class="dark2 center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <img src="~/img/InfomercFinal2.png" width="130" alt="">
+                        <div class="social">
+                            <a href="#">
+                                <i class="ion-social-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ion-social-googleplus"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ion-social-instagram-outline"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ion-social-linkedin-outline"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ion-social-pinterest-outline"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ion-social-github"></i>
+                            </a>
+                        </div>
+                        <hr>
+                        <p class="footer-text">Copyright © Arisn. All rights reservered
+                            <a href="#">Terms and Conditions</a>
+                            <a href="#">Cookie Policy</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="style-toggle"></div>
+        </footer>
+
+    </div>
+    <!-- end of web-in -->
+    <script src="~/vendor/jquery-2.2.1.min.js"></script>
+    <script src="~/vendor/matchHeight-min.js"></script>
+    <script src="~/vendor/contact/validator.js"></script>
+    <script src="~/vendor/contact/contact.js"></script>
+    <script src="~/vendor/pace.min.js"></script>
+    <script src="~/vendor/headroom/headroom.min.js"></script>
+    <script src="~/vendor/owl-slider/owl.carousel.min.js"></script>
+    <script src="~/vendor/slideshow/anime.min.js"></script>
+    <script src="~/vendor/slideshow/imagesloaded.pkgd.min.js"></script>
+    <script src="~/vendor/slideshow/main.js"></script>
+    <script src="~/vendor/parallax/materialize.min.js"></script>
+    <script src="~/vendor/lightbox/lity.min.js"></script>
+    <script src="~/vendor/tabs/jquery.tabslet.min.js"></script>
+    <script src="~/vendor/masonry.pkgd.min.js"></script>
+    <script src="~/js/main.js"></script>
+</body>
+
+</html>

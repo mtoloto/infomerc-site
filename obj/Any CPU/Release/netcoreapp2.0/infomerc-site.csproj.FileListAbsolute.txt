@@ -1,0 +1,10 @@
+D:\Projetos\infomerc-site\bin\Any CPU\Release\netcoreapp2.0\infomerc-site.deps.json
+D:\Projetos\infomerc-site\bin\Any CPU\Release\netcoreapp2.0\infomerc-site.runtimeconfig.json
+D:\Projetos\infomerc-site\bin\Any CPU\Release\netcoreapp2.0\infomerc-site.runtimeconfig.dev.json
+D:\Projetos\infomerc-site\bin\Any CPU\Release\netcoreapp2.0\infomerc-site.dll
+D:\Projetos\infomerc-site\bin\Any CPU\Release\netcoreapp2.0\infomerc-site.pdb
+D:\Projetos\infomerc-site\obj\Any CPU\Release\netcoreapp2.0\infomerc-site.csproj.CoreCompileInputs.cache
+D:\Projetos\infomerc-site\obj\Any CPU\Release\netcoreapp2.0\infomerc-site.AssemblyInfoInputs.cache
+D:\Projetos\infomerc-site\obj\Any CPU\Release\netcoreapp2.0\infomerc-site.AssemblyInfo.cs
+D:\Projetos\infomerc-site\obj\Any CPU\Release\netcoreapp2.0\infomerc-site.dll
+D:\Projetos\infomerc-site\obj\Any CPU\Release\netcoreapp2.0\infomerc-site.pdb

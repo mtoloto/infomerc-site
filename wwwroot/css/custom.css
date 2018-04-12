@@ -1,8 +1,8 @@
-body{
+body {
     font-family: Ubuntu
 }
 
-header#creative{
+header#creative {
     background-color: transparent;
 }
 
@@ -20,11 +20,11 @@ nav.headroom--not-top#dark.transparent {
     font-style: italic;
 }
 
-.dark1 h6, .dark2 h6, .dark3 h6, .dark h6, .primary h6, .masonry .project-info h6{
+.dark1 h6, .dark2 h6, .dark3 h6, .dark h6, .primary h6, .masonry .project-info h6 {
     color: #4d4d4d
 }
 
-nav .n_{
+nav .n_ {
     height: 160px;
 }
 
@@ -45,59 +45,60 @@ nav#light.start-light.headroom--top #menu-icon span {
 }
 
 nav .logo-holder .logo {
-    width: 200px; 
+    width: 200px;
 }
 
-@media (max-width: 991px){
-    nav .n_{
+@media (max-width: 991px) {
+    nav .n_ {
         height: 77px;
     }
 
-    body.menu-open nav .nav-content, body.menu-open nav#light .nav-content{
+    body.menu-open nav .nav-content, body.menu-open nav#light .nav-content {
         background: rgba(255, 255, 255, 0.95);
-        text-align: center; 
+        text-align: center;
     }
-    nav#light.start-light.headroom--top .nav-content > ul > li > a{
+
+    nav#light.start-light.headroom--top .nav-content > ul > li > a {
         line-height: 40px;
         border-bottom: 1px solid #f1f1f1;
     }
 }
 
-@media (min-width: 991px){ 
+@media (min-width: 991px) {
     nav .n_ {
         margin-right: 20px;
         margin-left: auto;
     }
 }
 
-header#creative .slide{
+header#creative .slide {
     padding: 10em 5em;
-} 
+}
 
-a{ 
+a {
     color: #1d6892;
 }
 
-.text-almost-white{
+.text-almost-white {
     color: #f1f1f1 !important;
-} 
+}
 
 nav li a {
     font: 400 16px/21px "Ubuntu", sans-serif;
     letter-spacing: 1.5px;
-    text-transform: none; 
+    text-transform: none;
 }
-  
-.text-center{
+
+.text-center {
     text-align: center;
 }
 
-.ou-register-login{
+.ou-register-login {
     margin: 100px 0;
 }
 
 .btn-social {
-    width: 100%; 
+    width: 100%;
     color: #fff;
     display: block;
     text-align: center;
@@ -105,17 +106,18 @@ nav li a {
     border: none;
     margin-bottom: 15px;
 }
-.btn-social.facebook { 
-    background-color: #3b5998; 
-}
 
-.btn-social.gplus { 
-    background-color: #e53935; 
-}
+    .btn-social.facebook {
+        background-color: #3b5998;
+    }
+
+    .btn-social.gplus {
+        background-color: #e53935;
+    }
 
 
 i {
-    color:#0091cf 
+    color: #0091cf
 }
 
 
@@ -125,4 +127,29 @@ select.form-control {
     border-color: transparent;
     padding: 10px 15px 11px;
     height: 55px
+}
+
+
+
+form.login-form input[type="text"], form.login-form input[type="tel"], form.login-form input[type="email"], form.login-form input[type="password"], form.login-form textarea {
+    width: 100%;
+    background: #F5F7F9;
+    border-color: transparent;
+    padding: 10px 15px 11px;
+}
+
+
+form.register-form input[type="text"], form.register-form input[type="tel"], form.register-form input[type="email"], form.register-form input[type="password"], form.register-form textarea {
+    width: 100%;
+    background: #F5F7F9;
+    border-color: transparent;
+    padding: 10px 15px 11px;
+}
+
+form.register-form .messages {
+    color: #787c85;
+    text-align: center;
+    padding: 21px 0 0;
+    font-weight: 700;
+    display: block;
 }

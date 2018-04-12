@@ -12540,6 +12540,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "D:\\Projetos\\infomerc-site\\infomerc-site.csproj",
       "projectName": "infomerc-site",

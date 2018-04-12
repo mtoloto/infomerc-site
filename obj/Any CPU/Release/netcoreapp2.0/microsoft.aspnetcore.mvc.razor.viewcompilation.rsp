@@ -1,0 +1,19 @@
+D:\Projetos\infomerc-site
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=infomerc-site
+--content-root=D:\Projetos\infomerc-site
+--file=D:\Projetos\infomerc-site\Areas\Admin\Views\Home\Index.cshtml
+--file=D:\Projetos\infomerc-site\Views\Contato\Index.cshtml
+--file=D:\Projetos\infomerc-site\Views\Erro\Descricao.cshtml
+--file=D:\Projetos\infomerc-site\Views\Erro\Erro404.cshtml
+--file=D:\Projetos\infomerc-site\Views\Erro\Index.cshtml
+--file=D:\Projetos\infomerc-site\Views\Home\Index.cshtml
+--file=D:\Projetos\infomerc-site\Views\Login\Index.cshtml
+--file=D:\Projetos\infomerc-site\Views\MinhaArea\Index.cshtml
+--file=D:\Projetos\infomerc-site\Views\Produtos\Index.cshtml
+--file=D:\Projetos\infomerc-site\Views\Shared\Error.cshtml
+--file=D:\Projetos\infomerc-site\Views\Shared\_Layout.cshtml
+--file=D:\Projetos\infomerc-site\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=D:\Projetos\infomerc-site\Views\Sobre\Index.cshtml
+--file=D:\Projetos\infomerc-site\Views\_ViewImports.cshtml
+--file=D:\Projetos\infomerc-site\Views\_ViewStart.cshtml

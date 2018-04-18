@@ -11,9 +11,10 @@ using System;
 namespace infomercsite.Migrations
 {
     [DbContext(typeof(UsuarioContext))]
-    partial class UsuarioContextModelSnapshot : ModelSnapshot
+    [Migration("20180412174545_usuarioAtivoePremium")]
+    partial class usuarioAtivoePremium
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

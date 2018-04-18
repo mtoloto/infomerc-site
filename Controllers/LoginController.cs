@@ -28,9 +28,8 @@ namespace infomerc_site.Controllers
         }
 
         [HttpPost]
-        public JsonResult Registro(Usuario usuario)
-        {
-
+        public async Task<JsonResult> Registro(Usuario usuario, bool lembrarme = false)
+        { 
             List<string> erros;
             erros = new List<string>();
 
@@ -53,59 +52,49 @@ namespace infomerc_site.Controllers
             if (jaExiste)
                 erros.Add("E-mail já cadastrado");
 
-
             if (erros.Count > 0)
                 return Json(new { erros });
 
+
             var bdUsuario = new UsuarioRepositorioEF(_context);
 
-
-
             usuario.DataCadastro = DateTime.Now;
+            usuario.Premium = false;
+            usuario.Ativo = true; 
 
             bdUsuario.Adicionar(usuario);
             bdUsuario.SalvarTodos();
 
-            return Json("");
+            var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme, ClaimTypes.Name, ClaimTypes.Role);
+            identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, usuario.Email)); 
+            identity.AddClaim(new Claim(ClaimTypes.Name, usuario.Nome));
+            var principal = new ClaimsPrincipal(identity);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties { IsPersistent = true });
+
+            return Json(new { logado = true });
         }
 
         [HttpPost]
         public async Task<IActionResult> Login(Usuario usuario, bool lembrarme = false)
         {
-
-            var _usuario = _context.Usuarios.FirstOrDefault(x => x.Email == usuario.Email);
-
+            var _usuario = _context.Usuarios.FirstOrDefault(x => x.Email == usuario.Email && x.Senha == usuario.Senha);
             if (_usuario != null)
             {
                 var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme, ClaimTypes.Name, ClaimTypes.Role);
-                identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, _usuario.Nome));
+                identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, _usuario.Email));
                 identity.AddClaim(new Claim(ClaimTypes.Name, _usuario.Nome));
                 var principal = new ClaimsPrincipal(identity);
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties { IsPersistent = true });
             }
-
             return RedirectToAction("Index", "Home");
-
         }
 
-        //[HttpPost]
-        //public async Task OnPostAsync(Usuario usuario)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        var isValid = (usuario.Email == "asd@asd.com" && usuario.Senha == "123456");
-        //        if (!isValid)
-        //        {
-        //            ModelState.AddModelError("", "username or password is invalid");
-        //            return View();
-        //        }
-        //         return RedirectToPage("Index");
-        //    }
-        //    else
-        //    {
-        //        ModelState.AddModelError("", "username or password is blank");
-        //        return Page();
-        //    }
-        //}
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }

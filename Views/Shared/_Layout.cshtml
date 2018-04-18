@@ -1,4 +1,10 @@
-﻿<!doctype html>
+﻿
+@{
+    var identity = (System.Security.Claims.ClaimsIdentity)User.Identity;
+    IEnumerable<System.Security.Claims.Claim> claims = identity.Claims;
+}
+
+<!doctype html>
 <html lang="en-US">
 
 <head>
@@ -44,9 +50,21 @@
                     <div class="col-md-12">
                         <div class="nav-ui n_">
                             <div>
-                                <a href="@Url.Action("Index", "Login")" class="btn hidden-xs">
-                                    <span>Área do cliente</span>
-                                </a>
+                                @if (identity.IsAuthenticated)
+                                {
+                                    <a href="@Url.Action("Index", "MinhaArea")" class="btn">
+                                        <span>Minha área</span>
+                                    </a>
+                                    <a href="@Url.Action("Logout", "Login")" class="">
+                                        <i class="ion-power"></i>
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a href="@Url.Action("Index", "Login")" class="btn">
+                                        <span>Login</span>
+                                    </a>
+                                }
                                 <div id="menu-icon">
                                     <span></span>
                                 </div>

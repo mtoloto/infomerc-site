@@ -14,5 +14,7 @@ namespace infomerc_site.Models
         public string Telefone { get; set; }
         public DateTime DataCadastro { get; set; }
         public string Interesse { get; set; }
+        public bool Ativo { get; set; }
+        public bool Premium { get; set; }
     }
 }

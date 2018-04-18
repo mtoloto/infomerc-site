@@ -59,8 +59,7 @@ nav .logo-holder .logo {
     }
 
     nav#light.start-light.headroom--top .nav-content > ul > li > a {
-        line-height: 40px;
-        border-bottom: 1px solid #f1f1f1;
+        line-height: 40px; 
     }
 }
 
@@ -152,4 +151,19 @@ form.register-form .messages {
     padding: 21px 0 0;
     font-weight: 700;
     display: block;
+}
+
+nav#light #menu-icon span {
+    background-color: #08598c;
+    height: 3px;
+}
+
+nav#light #menu-icon span::after {
+    background-color: #08598c;
+    height: 3px;
+}
+
+nav#light #menu-icon span:before {
+    background-color: #08598c;
+    height: 3px;
 }

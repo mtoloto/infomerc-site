@@ -13,10 +13,7 @@ namespace infomerc_site.Controllers
     public class HomeController : Controller
     {
         public IActionResult Index()
-        {
-            //var identity = (ClaimsIdentity)User.Identity;
-            //IEnumerable<Claim> claims = identity.Claims;
-            //ViewBag.Nome = identity.Name;
+        { 
             return View();
         }
     }

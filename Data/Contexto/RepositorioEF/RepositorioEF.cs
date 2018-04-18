@@ -22,9 +22,9 @@ namespace infomerc_site.Models
 
     public abstract class Repositorio<TEntity> : IDisposable, IRepositorio<TEntity> where TEntity : class
     {
-        UsuarioContext ctx;
+        InfomercContext ctx;
 
-        public Repositorio(UsuarioContext repo)
+        public Repositorio(InfomercContext repo)
         {
             ctx = repo;
         }

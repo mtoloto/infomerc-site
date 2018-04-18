@@ -2,11 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RootNamespace>infomerc_site</RootNamespace>
+    <AssemblyName>infomerc_site</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Migrations\20180411203739_asd.cs" />
     <Compile Remove="Migrations\20180411203739_asd.Designer.cs" />
+    <Compile Remove="Migrations\20180418122759_blog.cs" />
+    <Compile Remove="Migrations\20180418122759_blog.Designer.cs" />
+    <Compile Remove="Migrations\20180418180827_usuarioIdentity.cs" />
+    <Compile Remove="Migrations\20180418180827_usuarioIdentity.Designer.cs" />
+    <Compile Remove="Migrations\20180418181003_identity.cs" />
+    <Compile Remove="Migrations\20180418181003_identity.Designer.cs" />
+    <Compile Remove="Migrations\20180418181355_identity.cs" />
+    <Compile Remove="Migrations\20180418181355_identity.Designer.cs" />
+    <Compile Remove="Migrations\20180418182652_identity.cs" />
+    <Compile Remove="Migrations\20180418182652_identity.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,6 +27,29 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\npm.js" />
+    <None Include="wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
   </ItemGroup>
 
 </Project>

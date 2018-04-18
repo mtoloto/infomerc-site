@@ -4,7 +4,7 @@ namespace infomerc_site.Models.RepositorioEF
 {
     public class UsuarioRepositorioEF : Repositorio<Usuario>
     {
-        public UsuarioRepositorioEF(UsuarioContext repo)
+        public UsuarioRepositorioEF(InfomercContext repo)
             : base(repo)
         {
         }

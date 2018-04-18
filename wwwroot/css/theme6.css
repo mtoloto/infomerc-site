@@ -1466,7 +1466,7 @@ body.menu-open nav #menu-icon span:before,
 body.menu-open nav#light #menu-icon span,
 body.menu-open nav#light #menu-icon span:after,
 body.menu-open nav#light #menu-icon span:before {
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 body.menu-open nav #menu-icon span,
 body.menu-open nav#light #menu-icon span {

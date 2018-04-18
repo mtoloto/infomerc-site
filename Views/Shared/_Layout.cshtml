@@ -1,9 +1,6 @@
-﻿
-@{
-    var identity = (System.Security.Claims.ClaimsIdentity)User.Identity;
-    IEnumerable<System.Security.Claims.Claim> claims = identity.Claims;
+﻿@{ 
+    var logado = false;
 }
-
 <!doctype html>
 <html lang="en-US">
 
@@ -50,21 +47,7 @@
                     <div class="col-md-12">
                         <div class="nav-ui n_">
                             <div>
-                                @if (identity.IsAuthenticated)
-                                {
-                                    <a href="@Url.Action("Index", "MinhaArea")" class="btn">
-                                        <span>Minha área</span>
-                                    </a>
-                                    <a href="@Url.Action("Logout", "Login")" class="">
-                                        <i class="ion-power"></i>
-                                    </a>
-                                }
-                                else
-                                {
-                                    <a href="@Url.Action("Index", "Login")" class="btn">
-                                        <span>Login</span>
-                                    </a>
-                                }
+                                @await Html.PartialAsync("_LoginPartial")
                                 <div id="menu-icon">
                                     <span></span>
                                 </div>
@@ -95,6 +78,11 @@
                                 <li>
                                     <a href="@Url.Action("Index","Contato")">Contato</a>
                                 </li>
+
+                                <li class="hidden-sm hidden-md hidden-lg">
+                                    <a href="@Url.Action("Index", "Login")">Login</a>
+                                </li>
+
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -157,7 +145,8 @@
     <script src="~/vendor/tabs/jquery.tabslet.min.js"></script>
     <script src="~/vendor/masonry.pkgd.min.js"></script>
 
-    @RenderSection("js", false)
+    @RenderSection("js", false) 
+    @RenderSection("Scripts", required: false)
 
     <script src="~/js/main.js"></script>
 </body>

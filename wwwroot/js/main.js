@@ -508,12 +508,5 @@ $(function () {
             $this.removeClass('open').children().slideUp();
         }
         return false;
-    });
-
-    addEventListener(document, "scroll", function (e) {
-        console.log(e.defaultPrevented); // will be false
-        e.preventDefault(); // does nothing since the listener is passive
-        console.log(e.defaultPrevented); // still false
-    }, Modernizr.passiveeventlisteners ? { passive: true } :
-            false);
+    }); 
 });

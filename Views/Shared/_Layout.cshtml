@@ -1,6 +1,4 @@
-﻿@{ 
-    var logado = false;
-}
+﻿ 
 <!doctype html>
 <html lang="en-US">
 
@@ -22,7 +20,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="~/vendor/reset.css">
-    <link rel="stylesheet" href="~/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/vendor/ion-icons/ionicons.min.css">
     <link rel="stylesheet" href="~/vendor/owl-slider/owl.carousel.css">
     <link rel="stylesheet" href="~/vendor/slideshow/slideshow.css">
@@ -47,7 +45,7 @@
                     <div class="col-md-12">
                         <div class="nav-ui n_">
                             <div>
-                                @await Html.PartialAsync("_LoginPartial")
+
                                 <div id="menu-icon">
                                     <span></span>
                                 </div>
@@ -79,10 +77,10 @@
                                     <a href="@Url.Action("Index","Contato")">Contato</a>
                                 </li>
 
-                                <li class="hidden-sm hidden-md hidden-lg">
-                                    <a href="@Url.Action("Index", "Login")">Login</a>
-                                </li>
-
+                                @*<li class="hidden-sm hidden-md hidden-lg">
+                                        <a href="@Url.Action("Index", "Login")">Login</a>
+                                    </li>*@
+                                @await Html.PartialAsync("_LoginPartial")
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -131,6 +129,7 @@
     </div>
     <!-- end of web-in -->
     <script src="~/vendor/jquery-2.2.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="~/vendor/matchHeight-min.js"></script>
     <script src="~/vendor/contact/validator.js"></script>
     <script src="~/vendor/contact/contact.js"></script>
@@ -145,7 +144,7 @@
     <script src="~/vendor/tabs/jquery.tabslet.min.js"></script>
     <script src="~/vendor/masonry.pkgd.min.js"></script>
 
-    @RenderSection("js", false) 
+    @RenderSection("js", false)
     @RenderSection("Scripts", required: false)
 
     <script src="~/js/main.js"></script>

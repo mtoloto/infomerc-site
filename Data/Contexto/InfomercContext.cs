@@ -29,6 +29,5 @@ namespace infomerc_site.Data
             builder.Entity<IdentityRoleClaim<string>>().ToTable("INFOMERC_AspNetRoleClaims");
             builder.Entity<IdentityUserToken<string>>().ToTable("INFOMERC__AspNetUserTokens");
         }
-
     }
 }

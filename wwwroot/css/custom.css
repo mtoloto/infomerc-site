@@ -59,7 +59,7 @@ nav .logo-holder .logo {
     }
 
     nav#light.start-light.headroom--top .nav-content > ul > li > a {
-        line-height: 40px; 
+        line-height: 40px;
     }
 }
 
@@ -158,12 +158,25 @@ nav#light #menu-icon span {
     height: 3px;
 }
 
-nav#light #menu-icon span::after {
-    background-color: #08598c;
-    height: 3px;
+    nav#light #menu-icon span::after {
+        background-color: #08598c;
+        height: 3px;
+    }
+
+    nav#light #menu-icon span:before {
+        background-color: #08598c;
+        height: 3px;
+    }
+
+.border {
+    border: none !important;
 }
 
-nav#light #menu-icon span:before {
-    background-color: #08598c;
-    height: 3px;
+.list-group-item.active {
+    background-color: #045887;
+    border-color: #045887;
+}
+
+.list-group-item.active a{
+    color: #fff
 }

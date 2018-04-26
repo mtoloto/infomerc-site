@@ -16,40 +16,45 @@
             <div class="col-md-8">
                 <h4>Preencha os campos abaixo e logo entraremos em contato.</h4>
                 <form class="contact-form" method="post" action="contact.php">
-                    <div class="input-field col-sm-12">
-                        <div class="form-group">
-                            <input id="form-name" name="name" type="text" placeholder="Seu nome *" required="required" data-error="Nome é obrigatório.">
-                            <div class="help-block with-errors"></div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <input id="form-name" name="name" type="text" placeholder="Seu nome *" required="required" data-error="Nome é obrigatório.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input id="form-email" name="email" type="email" placeholder="Endereço de e-mail *" required="required" data-error="E-mail é obrigatório.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input id="form-tel" name="tel" type="tel" placeholder="Telefone" data-error="Por favor insira seu telefone ou celular.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <textarea id="form-textarea" name="Message" id="" cols="30" rows="5" placeholder="Deixe sua mensagem aqui..." required="required"
+                                              data-error="Mensagem é obrigatório"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 center">
+                                <input type="submit" value="Enviar contato">
+                                <div class="messages"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-field col-sm-6">
-                        <div class="form-group">
-                            <input id="form-email" name="email" type="email" placeholder="Endereço de e-mail *" required="required" data-error="E-mail é obrigatório.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="input-field col-sm-6">
-                        <div class="form-group">
-                            <input id="form-tel" name="tel" type="tel" placeholder="Telefone" data-error="Por favor insira seu telefone ou celular.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="input-field col-sm-12">
-                        <div class="form-group">
-                            <textarea id="form-textarea" name="Message" id="" cols="30" rows="5" placeholder="Deixe sua mensagem aqui..." required="required"
-                                data-error="Mensagem é obrigatório"></textarea>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 center">
-                        <input type="submit" value="Enviar contato">
-                        <div class="messages"></div>
                     </div>
                 </form>
             </div>
             <div class="col-md-3 col-md-offset-1">
                 <h5>Address</h5>
-                <p>101 London Bridge, Paragon Way, SE88 0EB, London, United Kingdom
+                <p>
+                    101 London Bridge, Paragon Way, SE88 0EB, London, United Kingdom
                 </p>
                 <a href="#">Visit on Google Maps</a>
                 <hr>
@@ -67,5 +72,5 @@
     <div id="map"></div>
     <script src="js/googleMap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGdxJUGVa8uDG4wsQp-cmzQI1ijLNqYb4&callback=initMap" async
-        defer></script>
+            defer></script>
 </div>

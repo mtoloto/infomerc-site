@@ -1,0 +1,38 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<!-- Header -->
+<header id="sp2" class="center" style="background: url(https://image.freepik.com/free-vector/technology-triangles-background_1017-2455.jpg); background-size: cover;">
+    <div class="header-in">
+        <div class="caption">
+            <h5></h5>
+            <h1>Contato</h1>
+            <h6>Deixe sua mensagem ou dúvida para a gente.</h6>
+        </div>
+        <img class="arrow" src="~/img/arrow.svg" alt="">
+    </div>
+</header>
+<section>
+    <div class="container">
+        <h2>Gerencie sua conta</h2>
+
+        <div>
+            <h4>Mude as informações que quiser</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <br />
+                    @await Html.PartialAsync("_ManageNav")
+                </div>
+                <div class="col-md-9">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+        @section Scripts {
+            @RenderSection("Scripts", required: false)
+        }
+
+    </div>
+</section>

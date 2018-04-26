@@ -8,20 +8,24 @@ namespace infomerc_site.Models.AccountViewModels
 {
     public class RegisterViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Nome é obrigatório")] 
+        [Display(Name = "Nome")]
+        public string Nome { get; set; }
+
+        [Required(ErrorMessage = "E-mail é obrigatório")]
         [EmailAddress]
-        [Display(Name = "Email")]
+        [Display(Name = "E-mail")]
         public string Email { get; set; }
 
-        [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+        [Required(ErrorMessage ="Senha é obrigatório")]
+        [StringLength(100, ErrorMessage = "A {0} deve ter de {2} a {1} caractéres.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Senha")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "Digite novamente")]
+        [Compare("Password", ErrorMessage = "Senha e confirmação de senha não são iguais.")]
         public string ConfirmPassword { get; set; }
     }
 }

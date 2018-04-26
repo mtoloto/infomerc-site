@@ -34,6 +34,18 @@ namespace infomerc_site
                 .AddEntityFrameworkStores<InfomercContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+            });
+
+            services.AddAuthentication().AddGoogle(googleOptions =>
+            {
+                googleOptions.ClientId = Configuration["Authentication:Google:ClientId"];
+                googleOptions.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
+            });
+
             services.Configure<IdentityOptions>(options =>
             {
                 // Password settings
@@ -80,7 +92,7 @@ namespace infomerc_site
                 {
                     options.LowercaseUrls = true;
                 });
-             
+
             services.AddMvc();
         }
 
@@ -104,7 +116,7 @@ namespace infomerc_site
             app.UseAuthentication();
 
             app.UseMvc(routes =>
-            { 
+            {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

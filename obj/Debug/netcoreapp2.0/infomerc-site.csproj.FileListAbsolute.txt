@@ -20,3 +20,15 @@ E:\Projetos\infomerc-site\bin\Debug\netcoreapp2.0\infomerc_site.dll
 E:\Projetos\infomerc-site\bin\Debug\netcoreapp2.0\infomerc_site.pdb
 E:\Projetos\infomerc-site\obj\Debug\netcoreapp2.0\infomerc_site.dll
 E:\Projetos\infomerc-site\obj\Debug\netcoreapp2.0\infomerc_site.pdb
+E:\Projetos\infomerc-site - Copy\obj\Debug\netcoreapp2.0\infomerc-site.csprojResolveAssemblyReference.cache
+E:\Projetos\infomerc-site - Copy\obj\Debug\netcoreapp2.0\infomerc-site.csproj.CoreCompileInputs.cache
+E:\Projetos\infomerc-site - Copy\obj\Debug\netcoreapp2.0\infomerc-site.AssemblyInfoInputs.cache
+E:\Projetos\infomerc-site - Copy\obj\Debug\netcoreapp2.0\infomerc-site.AssemblyInfo.cs
+E:\Projetos\infomerc-site - Copy\obj\Debug\netcoreapp2.0\infomerc_site.dll
+E:\Projetos\infomerc-site - Copy\obj\Debug\netcoreapp2.0\infomerc_site.pdb
+E:\Projetos\infomerc-site - Copy\bin\Debug\netcoreapp2.0\infomerc_site.deps.json
+E:\Projetos\infomerc-site - Copy\bin\Debug\netcoreapp2.0\infomerc_site.runtimeconfig.json
+E:\Projetos\infomerc-site - Copy\bin\Debug\netcoreapp2.0\infomerc_site.runtimeconfig.dev.json
+E:\Projetos\infomerc-site - Copy\bin\Debug\netcoreapp2.0\infomerc_site.dll
+E:\Projetos\infomerc-site - Copy\bin\Debug\netcoreapp2.0\infomerc_site.pdb
+E:\Projetos\infomerc-site - Copy\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

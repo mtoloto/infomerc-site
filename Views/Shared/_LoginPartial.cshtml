@@ -1,0 +1,51 @@
+@using Microsoft.AspNetCore.Identity
+@using infomerc_site.Models
+
+@inject SignInManager<Usuario> SignInManager
+@inject UserManager<Usuario> UserManager
+@inject infomerc_site.Data.InfomercContext context
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+
+    var usuario = context.Usuarios.FirstOrDefault(x => x.Id == UserManager.GetUserId(User));
+
+    <li class="parent">
+        <a href="#"><i class="ion-person"></i> @usuario.Nome</a>
+        <ul class="dropdown mob-show-1" style="background-color: #f1f1f1; padding-left: 0">
+            <li class="nav-col parent">
+                <ul>
+                    <li class="sub-nav-header parent">
+                        <ul>
+                            <li><a asp-controller="Perfil" asp-action="Index" title="Perfil" style="font-size:14px">Perfil</a></li>
+                            <li><a asp-controller="MinhaArea" asp-action="Index" title="Minha &aacute;rea" style="font-size:14px">Minha &Aacute;rea</a></li>
+                            <li>
+                                <hr class="hidden-xs"/>
+                                <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+                                    <button type="submit" style="background: none; border: none; color: #000; padding: 15px;">Sair</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    @*<li>
+            <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage"><i class="ion-person"></i></a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </form>
+        </li>*@
+}
+else
+{
+    <li><a asp-area="" asp-controller="Conta" asp-action="Login">Cadastrar / Login</a></li>
+}

@@ -12541,11 +12541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projetos\\infomerc-site - Copy\\infomerc-site.csproj",
+      "projectUniqueName": "C:\\Projetos\\infomerctemp\\infomerc-site\\infomerc-site.csproj",
       "projectName": "infomerc_site",
-      "projectPath": "E:\\Projetos\\infomerc-site - Copy\\infomerc-site.csproj",
+      "projectPath": "C:\\Projetos\\infomerctemp\\infomerc-site\\infomerc-site.csproj",
       "packagesPath": "C:\\Users\\Marcus Toloto\\.nuget\\packages\\",
-      "outputPath": "E:\\Projetos\\infomerc-site - Copy\\obj\\",
+      "outputPath": "C:\\Projetos\\infomerctemp\\infomerc-site\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

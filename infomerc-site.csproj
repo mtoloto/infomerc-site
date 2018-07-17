@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\BlogController.cs" />
     <Compile Remove="Migrations\20180411203739_asd.cs" />
     <Compile Remove="Migrations\20180411203739_asd.Designer.cs" />
     <Compile Remove="Migrations\20180418122759_blog.cs" />

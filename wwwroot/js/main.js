@@ -401,7 +401,7 @@ $(function () {
 
         setInterval(function () {
             slideshow.prev();
-        }, 4000);
+        }, 5000);
     }
 
     // --------------------------

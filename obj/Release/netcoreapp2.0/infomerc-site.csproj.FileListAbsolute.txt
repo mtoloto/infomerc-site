@@ -9,3 +9,15 @@ D:\Projetos\infomerc-site\obj\Release\netcoreapp2.0\infomerc-site.AssemblyInfo.c
 D:\Projetos\infomerc-site\obj\Release\netcoreapp2.0\infomerc-site.dll
 D:\Projetos\infomerc-site\obj\Release\netcoreapp2.0\infomerc-site.pdb
 D:\Projetos\infomerc-site\obj\Release\netcoreapp2.0\infomerc-site.csprojResolveAssemblyReference.cache
+C:\Projetos\infomerctemp\infomerc-site\bin\Release\netcoreapp2.0\infomerc_site.deps.json
+C:\Projetos\infomerctemp\infomerc-site\bin\Release\netcoreapp2.0\infomerc_site.runtimeconfig.json
+C:\Projetos\infomerctemp\infomerc-site\bin\Release\netcoreapp2.0\infomerc_site.runtimeconfig.dev.json
+C:\Projetos\infomerctemp\infomerc-site\bin\Release\netcoreapp2.0\infomerc_site.dll
+C:\Projetos\infomerctemp\infomerc-site\bin\Release\netcoreapp2.0\infomerc_site.pdb
+C:\Projetos\infomerctemp\infomerc-site\obj\Release\netcoreapp2.0\infomerc-site.csprojResolveAssemblyReference.cache
+C:\Projetos\infomerctemp\infomerc-site\obj\Release\netcoreapp2.0\infomerc-site.csproj.CoreCompileInputs.cache
+C:\Projetos\infomerctemp\infomerc-site\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Projetos\infomerctemp\infomerc-site\obj\Release\netcoreapp2.0\infomerc-site.AssemblyInfoInputs.cache
+C:\Projetos\infomerctemp\infomerc-site\obj\Release\netcoreapp2.0\infomerc-site.AssemblyInfo.cs
+C:\Projetos\infomerctemp\infomerc-site\obj\Release\netcoreapp2.0\infomerc_site.dll
+C:\Projetos\infomerctemp\infomerc-site\obj\Release\netcoreapp2.0\infomerc_site.pdb

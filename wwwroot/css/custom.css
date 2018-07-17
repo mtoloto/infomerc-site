@@ -180,3 +180,8 @@ nav#light #menu-icon span {
 .list-group-item.active a{
     color: #fff
 }
+
+.topo-clothes{
+    background-image: url('/img/headers/topo-img.jpg');
+    background-position: bottom;
+}
